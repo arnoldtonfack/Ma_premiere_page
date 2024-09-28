@@ -65,8 +65,8 @@ const Heating: React.FC<HeatingProps> = ({
 
     default:
       return (
-        <div  className={`flex ${align}`}>
-          <h2 className={` ${className}   ${theme === "secondary"? "text-5xl ": "text-3xl"} ${classDefault} ${font} ${color}`}>
+        <div  className={`flex text-center ${align}`}>
+          <h2 className={` ${className}   ${theme === "secondary"? "text-3xl md:text-5xl ": "text-3xl"} ${classDefault} ${font} ${color}`}>
             {children}
           </h2>
         </div>
