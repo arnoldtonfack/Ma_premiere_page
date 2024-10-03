@@ -9,7 +9,7 @@ const HeroTop = () => {
     
   return (
     <div className='w-full bg-primary '>
-        <div className='bg-repeat w-full h-full pb-20 md:pb-[93px]' style={{backgroundImage: `url(${backgroudi})`}}>
+        <div className='bg-repeat w-full h-full  pb-24 md:pb-[150px]' style={{backgroundImage: `url(${backgroudi})`}}>
             <Container>
                 <Header/>
 
@@ -27,7 +27,7 @@ const HeroTop = () => {
                   </div>
                 </div>
                   <div className=' relative text-left md:text-center lg:text-left lg:-top-10 z-10 uppercase text-secondary md:-mt-10 '>
-                    <h1 className='mb-4 font-semibold'>C'est au moment de goute des hambergers</h1>
+                    <h1 className='mb-4 font-semibold'>C'est au moment de goute des hambergers </h1>
                     <h2 className='font-secondary py shadowTitreSecodary'>
                       <span className='text-7xl md:text-8xl block'>Burger</span>
                       <span className='md:text-6xl text-5xl block md:inline-block '>House</span> 

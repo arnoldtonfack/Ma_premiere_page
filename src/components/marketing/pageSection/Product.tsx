@@ -19,10 +19,10 @@ const Product = () => {
         deserunt enim id ratione voluptate et ipsa omnis magnam! Minima, aut.
       </p>
 
-      <div className=" grid grid-cols-3  mb-16  gap-x-1 ">
-        <div className=" w-full h-full  ">
+      <div className=" grid md:grid-cols-3  mb-16  gap-x-1 ">
+        <div className=" w-full h-full ">
           <div className=" relative  h-72">
-          <img src={product1} className="bg-primary absolute w-full h-full top-0 left-0 object-cover z-0" alt="" />
+          <img src={product1} className="bg-primary rounded-sm absolute w-full h-full top-0 left-0 object-cover z-0" alt="" />
           </div>
           <div className=" flex items-center flex-col justify-center ">
             <Heating variante="h3" className="my-5" >
@@ -31,14 +31,14 @@ const Product = () => {
             <p className="text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, veniam!
             </p>
-            <Button color="danger">
+            <Button color="danger" className="md:mb-0 mb-10">
               Commandez
             </Button>
           </div>
         </div>
         <div className=" w-full h-full  ">
           <div className=" relative  h-72">
-          <img src={product2} className="bg-primary absolute w-full h-full top-0 left-0 object-cover z-0" alt="" />
+          <img src={product2} className="bg-primary rounded-sm absolute w-full h-full top-0 left-0 object-cover z-0" alt="" />
           </div>
           <div className=" flex items-center flex-col justify-center ">
             <Heating variante="h3" className="my-5">
@@ -47,14 +47,14 @@ const Product = () => {
             <p className="text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, veniam!
             </p>
-            <Button color="danger">
+            <Button color="danger" className="md:mb-0 mb-10">
               Commandez
             </Button>
           </div>
         </div>
         <div className=" w-full h-full ">
           <div className=" relative  h-72">
-          <img src={product3} className="bg-primary absolute w-full h-full top-0 left-0 object-cover z-0" alt="" />
+          <img src={product3} className="bg-primary  rounded-sm absolute w-full h-full top-0 left-0 object-cover z-0" alt="" />
           </div>
           <div className=" flex items-center flex-col justify-center ">
             <Heating variante="h3" className="my-5">
@@ -63,7 +63,7 @@ const Product = () => {
             <p className="text-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, veniam!
             </p>
-            <Button color="danger">
+            <Button color="danger" className="md:mb-0 ">
               Commandez
             </Button>
           </div>

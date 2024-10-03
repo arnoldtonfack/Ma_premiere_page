@@ -12,15 +12,15 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <Container>
-      <div className="relative mb-20 p-5 text-white ">
+    // <Container>
+      <div className="relative md:mb-20 p-5 text-white ">
         <img
           src={backgroundImage}
           alt="burger footer"
           className="bg-black absolute top-0 left-0 w-full h-full object-cover z-0 "
         />
-        <div className="relative  grid grid-cols-2  z-10">
-          <div className=" w-full  p-5 mt-20 mb-28">
+        <div className="relative  grid md:grid-cols-2  z-10">
+          <div className=" w-full  md:p-5 mt-20 md:mb-28">
             <img src={logo} className="w-2/3" alt="" />
             <p className="mt-10">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
@@ -28,15 +28,15 @@ const Footer = () => {
               quod?
             </p>
           </div>
-          <div className="flex flex-col items-center justify-center  w-full h-full">
+          <div className="flex flex-col items-start md:items-center justify-center  w-full h-full">
             <div className="flex items-center gap-x-2">
               <MapPinIcon className="w-7 h-7" />
               <span className="uppercase font-extrabold tracking-tight text-lg">
                 IS place bellecour, 6900 Iyon
               </span>
             </div>
-            <div className="flex items-center gap-x-2 mt-5">
-              <EnvelopeIcon className="w-7 h-7" />
+            <div className="flex items-center gap-x-2 pb-4 md:pb-0 mt-5">
+              <EnvelopeIcon className="w-7 h-7 mb-3" />
               <span className="uppercase font-extrabold tracking-tight text-lg">
                 info@burger-house.com
               </span>
@@ -65,7 +65,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </Container>
+    // </Container>
   );
 };
 

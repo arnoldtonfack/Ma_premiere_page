@@ -39,20 +39,20 @@ const Booking = () => {
       <div className=" relative">
         <img
           src={Burger}
-          className="absolute z-10 -top-30 -left-36"
+          className=" hidden md:block absolute z-10 md:-top-10 lg:top-7  -left-36"
           alt="Burger"
         />
         <img
           src={SaucePimenter}
-          className="absolute -left-10 bottom-0  "
+          className="hidden lg:block absolute -left-10 bottom-0  "
           alt="Burger"
         />
         <img
           src={Assiette}
-          className="absolute -right-96 -bottom-36 "
+          className="hidden lg:block absolute -right-96 -bottom-36 "
           alt="Burger"
         />
-        <div className="max-w-2xl py-48 mx-auto">
+        <div className="max-w-2xl md:py-48 mx-auto">
           <Heating variante="h3" alignement="center">
             Reservation
           </Heating>
@@ -61,7 +61,7 @@ const Booking = () => {
           </Heating>
 
           <div>
-            <section>
+            <section className="pb-8 md:pb-0" >
               <Formik
                 initialValues={initialValues}
                 validationSchema={validationSchema}
@@ -70,7 +70,7 @@ const Booking = () => {
                 }}
               >
                 {()=>(
-                  <Form action="" method="post" className="grid grid-cols-2 gap-x-6 mt-20 ">
+                  <Form action="" method="post" className="grid md:grid-cols-2 gap-x-6 mt-20 ">
                   <Input
                     name="name"
                     placeholder="Entrez votre nom"

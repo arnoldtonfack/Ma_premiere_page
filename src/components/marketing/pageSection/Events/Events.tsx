@@ -1,7 +1,7 @@
 import React, {  PropsWithChildren } from "react";
 import Container from "../../../elements/Container";
 import AliceCarousel from "react-alice-carousel";
-import Image1 from "../../../../medias/photo/dorian-hurst-d-igN2ptyC8-unsplash.jpg";
+// import Image1 from "../../../../medias/photo/dorian-hurst-d-igN2ptyC8-unsplash.jpg";
 import Image2 from "../../../../medias/images/products/Product-1.jpg";
 import Image3 from "../../../../medias/images/products/Product-2.jpg";
 import "./index.css";
@@ -17,12 +17,12 @@ type SlideProps ={
 //creons un composant interne slide
 const Slide: React.FC<PropsWithChildren<SlideProps>> = ({ children, category, title, image, alt }) => {
   return (
-    <div className=" grid grid-cols-2 p-6  h-96">
-      <div className=" p-10 mb-10 w-full">
+    <div className=" grid md:grid-cols-2 p-6">
+      <div className=" p-2 md:p-10 mb-10 w-full">
          <Heating variante="h4">
           {category}
          </Heating>
-         <Heating theme="secondary" variante="h3" className="mb-5">
+         <Heating theme="secondary" variante="h3" className="md:mb-5">
            {title}
          </Heating>
         <p className="tracking-wide text-lg leading-relaxed font-light text-gray-800">
@@ -30,7 +30,7 @@ const Slide: React.FC<PropsWithChildren<SlideProps>> = ({ children, category, ti
         </p>
 
          </div>
-      <div className="bg-yellow-500 w-full relative top-0 left-0">
+      <div className="bg-yellow-500 w-full relative top-0 left-0 md:h-full h-96">
       <img src={image} alt={alt} className="bg-primary h-full w-full absolute object-cover object-bottom z-0 " />z
       </div>
       
@@ -41,7 +41,7 @@ const Slide: React.FC<PropsWithChildren<SlideProps>> = ({ children, category, ti
 const Events = () => {
   const items = [
       <Slide 
-      image={Image1}
+      image={Image2}
       alt="image1"
       category="evenement a venir"
       title= "vivez la demi-finale"
@@ -67,7 +67,7 @@ const Events = () => {
   ];
   return (
     <Container>
-      <div className="shadow-2xl mb-20 h-96">
+      <div className="shadow-2xl mb-20  border border-gray-100">
         <AliceCarousel
           mouseTracking
           items={items}
